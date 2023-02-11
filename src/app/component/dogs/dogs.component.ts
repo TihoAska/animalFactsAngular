@@ -10,7 +10,6 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class DogsComponent {
   
-  url = "https://dog-api.kinduff.com/api/facts?number=5";
   dogsFact : any;
 
   constructor(private api : ApiService){

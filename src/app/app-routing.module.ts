@@ -1,6 +1,6 @@
-import { DogsComponent } from './component/component1/dogs.component';
-import { MiceComponent } from './component/component3/mice.component';
-import { CatsComponent } from './component/component2/cats.component';
+import { DogsComponent } from './component/dogs/dogs.component';
+import { FishComponent } from './component/fish/fish.component';
+import { CatsComponent } from './component/cats/cats.component';
 
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -16,8 +16,8 @@ const routes: Routes = [
     component: CatsComponent
   },
   {
-    path: 'mice',
-    component: MiceComponent
+    path: 'fish',
+    component: FishComponent
   }
 ];
 

@@ -6,11 +6,21 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  url = "https://dog-api.kinduff.com/api/facts?number=5";
+  dogsUrl = "https://dog-api.kinduff.com/api/facts?number=5";
+  catsUrl = "https://meowfacts.herokuapp.com/?count=5";
+  fishUrl = "https://www.fishwatch.gov/api/species";
 
   constructor(private http : HttpClient) { }
 
   getRandomDogsFact(){
-    return this.http.get(this.url);
+    return this.http.get(this.dogsUrl);
+  }
+
+  getRandomCatsFact(){
+    return this.http.get(this.catsUrl);
+  }
+
+  getRandomFishFact(){
+    return this.http.get(this.fishUrl);
   }
 }
